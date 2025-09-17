@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO ScreenSaver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="screensaver-container">
+        <div id="controls" class="controls">
+            <h1>ISO ScreenSaver</h1>
+            <div class="control-group">
+                <label for="mode-select">Mode:</label>
+                <select id="mode-select">
+                    <option value="floating-shapes">Floating Shapes</option>
+                    <option value="matrix-rain">Matrix Rain</option>
+                    <option value="bouncing-balls">Bouncing Balls</option>
+                    <option value="starfield">Starfield</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <button id="start-btn">Start Screensaver</button>
+                <button id="fullscreen-btn">Fullscreen</button>
+            </div>
+            <div class="control-group">
+                <label for="color-picker">Primary Color:</label>
+                <input type="color" id="color-picker" value="#00ff00">
+            </div>
+        </div>
+        
+        <canvas id="screensaver-canvas"></canvas>
+        
+        <div id="exit-hint" class="exit-hint">
+            Press ESC or click to exit screensaver
+        </div>
+    </div>
+    
+    <script src="screensaver.js"></script>
+</body>
+</html>

@@ -1,2 +1,2 @@
 # screensaver
-iso app
+ios app
